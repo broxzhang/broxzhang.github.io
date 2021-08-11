@@ -40,17 +40,13 @@
 
 
 
-  <a href="backStoreOrderProfile.html"><button class="btn Add"> Add </button></a>
-
-  <a href="backStoreOrderProfile.html"><button class="btn Edit"> Edit </button></a>
-
-  <button class="btn Delete"> Delete</button>
+ 
   <br><br>
-
+  <a href="backStoreOrderProfile.html"><button class="btn Add" > Add Oder</button></a>
   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names, products, orders.."
     title="Type in a name">
 
-
+   
   <style>
     table {
       border-collapse: collapse;
@@ -75,13 +71,13 @@
 
 
   <div style="overflow-x:auto;">
-    <table>
+    <table id="order">
       <tr>
-        <th>
+       
         <th>Order #</th>
-        <th>Item</th>
-        <th>Quantity </th>
-        <th>Vendor </th>
+        <th>Items</th>
+        
+        <th>Total Prices (CND)</th>
         <th>Customer ID# </th>
 
 
@@ -89,57 +85,60 @@
 
 
       </tr>
+
       <tr>
-        <th>
-          <label>
-            <input type="checkbox" name="remember">
-        </th>
+        
         <td>csf234dfs</td>
-        <td>apples</td>
-        <td>12</td>
-        <td>OrgFarm</td>
-
-
+        <td>1. Apples Gala (5); 2. Milk skim (2)</td>
+        <td>12.55</td>
         <td>caiz1234</td>
 
+        <td>
+
+        <a href="backStoreOrderProfile.html" ><button class="btn Edit" id="btn" input value="Check" type=submit > Edit </button></a>
+      
+        <button class="btn Delete" id="btn" input value="Check" type=submit > Delete</button></td>
 
       </tr>
+
+
       <tr>
-        <th>
-          <label>
-            <input type="checkbox" name="remember">
-        </th>
+       
         <td>asf2sddfs</td>
-        <td>milk</td>
-        <td>2</td>
-        <td>OrgFarm</td>
+        <td>1. Apples Spartan (4); 2. Tomato Cherry Grape (3)</td>
+        <td>18.75</td>
         <td>jimd445</td>
 
+        <td>
 
+          <a href="backStoreOrderProfile.html" ><button class="btn Edit" id="btn" input value="Check" type=submit > Edit </button></a>
+        
+          <button class="btn Delete" id="btn" input value="Check" type=submit > Delete</button></td>
       </tr>
       <tr>
-        <th>
-          <label>
-            <input type="checkbox" name="remember">
-        </th>
+      
         <td>edd32fad</td>
-        <td>eggs</td>
-        <td>12</td>
-        <td>ACFarm</td>
+        <td>1. Pepsi (3); 2. Popcorn (2)</td>
+        <td>8.0</td>
         <td>Apol520</td>
 
+        <td>
 
+          <a href="backStoreOrderProfile.html" ><button class="btn Edit" id="btn" input value="Check" type=submit > Edit </button></a>
+        
+          <button class="btn Delete" id="btn" input value="Check" type=submit > Delete</button></td>
       </tr>
     </table>
   </div>
 
 
 
+<!-- javascript -->
+<script src="js/backStoreOrderList.js"></script>
 
 
 
 </body>
-
 
 
 

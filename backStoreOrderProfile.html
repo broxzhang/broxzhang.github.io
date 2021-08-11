@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
   <title>Concordia Store</title>
-  <link rel="stylesheet" type="text/css" href="/style/backStore.css">
+  <link rel="stylesheet" type="text/css" href="style/backStore.css">
 
 </head>
 
@@ -43,7 +43,7 @@
 
       <label for="fname">Order#</label>
       <input type="text" id="order" order="firstname" placeholder="23e3dfadf">
-      <label for="item">Item</label>
+      <!-- <label for="item">Item</label>
       <select id="item" name="Item">
         <option value="vegetable">Vegetables</option>
         <option value="fruits">Fruits</option>
@@ -54,23 +54,34 @@
       </select>
       <label for="quantity">Quantity:</label>
       <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
-      <br><br>
+      <br><br> -->
 
-      <label for="Vendor">Vendor</label>
-      <input type="text" id="lname" name="Vendor" placeholder="Condordia">
+      <!-- <label for="Vendor">Vendor</label>
+      <input type="text" id="lname" name="Vendor" placeholder="Condordia"> -->
 
 
       <label for="order">Customer ID#</label>
       <input type="text" id="customer" name="customer" placeholder="joe234">
 
-
+      <label for="order">Total Price $</label>
+      <input type="number" id="customer" name="customer" placeholder="1.00"><br> <br> 
 
       <label for="subject">Description</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <textarea id="subject" name="subject" placeholder="Please follow the follow the formate:&#10;1. Apples (Tyepe: Gala; Quantity: 5); &#10;2. Milk (Typel: skim; Quantity:2)&#10;...." style="height:200px"></textarea>
 
-      <input type="submit" value="Save">
+      <!-- <input type="submit" value="Save">
+      <input type="reset" value="Reset"> -->
 
-    </form>
+      
+      <!-- <input type="submit" name="submit" value="Save">
+      <input type="reset" name="reset" value="reset"> -->
+      
+      <input type="submit" name="submit" value="Save">
+      
+
+  </div>
+
+  </form>
   </div>
 
 
@@ -86,3 +97,5 @@
 <footer>
   all rights reserved.
 </footer>
+
+</html>

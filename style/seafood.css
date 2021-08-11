@@ -1,283 +1,108 @@
 html body {
-    margin: 0;
-    padding: 0;
-    display: flex;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .seafood-container {
-    display: flex;
-    width: 100vw;
-    height: auto;
+  display: flex;
+  width: 100vw;
+  height: auto;
+  flex-flow: column;
+}
+
+.card {
+  border: none;
+}
+
+.card-title {
+  height: 3rem;
 }
 
 .main-container {
-    max-width: 1180px;
-    width: 1180px;
-    display: flex;
-    margin: auto;
-    flex-flow: row;
+  margin-top: 20px;
+  max-width: 1196px;
+  display: flex;
+  margin: 0 auto;
+  flex-flow: row;
 }
 
 .menu-container {
-    margin-top: 2rem;
-
-    display: flex;
-    flex: 1;
-    flex-flow: column;
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column;
 }
 
 .products-container {
-    margin-top: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+}
 
-    display: flex;
-    flex-flow: row wrap;
-    flex: 4;
+.fa-shopping-cart {
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  overflow: hidden;
+  transition: width 1s ease;
+}
+
+.fa-shopping-cart:hover {
+  width: 300px;
+  color: red;
 }
 
 .product {
-    border-top: 1px solid rgb(37, 37,37);
-    border-bottom: 1px solid rgb(37, 37,37);
-    width: 240px;
-    height: 500px;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
+  border-top: 1px solid rgb(37, 37, 37);
+  border-bottom: 1px solid rgb(37, 37, 37);
+  width: 240px;
+  height: 500px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
 }
 
 .product-img {
-    margin: 20px 0 5px 20px;
-    height: 200px;
-    width: 200px;
+  margin: 20px 0 5px 20px;
+  height: 200px;
+  width: 200px;
 }
 
 .img-container {
-    display: flex;
-    flex: 2;
+  display: flex;
+  flex: 2;
 }
 
 .product-info-container {
-    display: flex;
-    flex-flow: column;
-    flex: 3;
-    justify-content: start;
-}
-
-.product-des-container {
-    height: 50px;
-    width: 500px;
-    overflow: hidden;
-    transition: height .7s ease;
-}
-
-.product-des-container:hover {
-    height: 200px;
-}
-
-.ingredients-container {
-    height: 50px;
-    width: 500px;
-    overflow: hidden;
-    transition: height .7s ease;
-}
-
-.ingredients-container:hover {
-    height: 100px;
+  display: flex;
+  flex-flow: column;
+  flex: 3;
+  justify-content: start;
 }
 
 .filter {
-    font-weight: 100;
-    color: black;
-    cursor: pointer;
-    transition: all .7s ease;
+  font-weight: 100;
+  color: black;
+  cursor: pointer;
+  transition: all 0.7s ease;
 }
 
 .filter:hover {
-    margin-left: 5px;
-    color: red
-}
-.parallax{ 
-  
-  height: max-content;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-   
-}
-header{
-
-background-image: url("/img/background.webp") ;
-  margin-top: 40px;
-  background-size:contain;
-  border-radius: 30px;
-}
-.footer {
-  /* margin-top: -20px; */
-  background-color: #2184c2;
-  color: whitesmoke;
-  text-align: center;
-  flex-shrink: 0;
+  margin-left: 5px;
+  color: red;
 }
 
-h1{
-background: rgba (0,0, 0, 0.5);
-  text-align: center;
-  color: whitesmoke;
-  padding: 50px;
-  font-variant: small-caps;
-  font-size: 50px;
-  font-family: fantasy;
-  letter-spacing: 20px;
+a {
+  text-decoration: none;
 }
+
 a:link {
   text-decoration: none;
 }
- h3{
-    
-   color: azure;
- }
- #end{
-  text-align:left ;
-  color: #fff;
-}
-#sticky{
-  position:fixed;
-  top:0;
-  width: 100%;
 
-}
-.menu{
-  background: #477cdd;
-  text-align: center;
-}
-.menu-ul{
-  margin: 0;
-  padding: 0;
-  display: inline;
-}
-.menu-ul li{
-  font-size: 17px;
-  padding: 25px 25px 0px 25px;
-  display: inline-block;
-  list-style: none;
-  font-size: 17px;
-  
-}
-.a-menu{
-text-decoration: none;
-color: white;
-}
-.menu-ul li:hover{
-  background: none;
-  transform: scale(1.1);
-
-}
-
-.search-box{
-  border: 1px  solid white;
-border-radius: 50px;
-background: white;
-width: max-content;
-display: inline-block;
-margin: 8px;
-}
-.search-box:hover{
-  box-shadow: white;
-  border: 1px solid #5b8cd5;
-
-}
-.search-input{
-  width: 250px;
-  border: none;
-  font-size: 16px;
-  outline: none;
-  background: transparent;
-  margin: 15px  0 0 10px;
-  
-}
-
-i{
-  font-size: 20px;
-  margin: 0 10px 0 0;
-}
-button{
-  
-  background: none;
-  border: none;
-  outline: none;
-
-}
-/* The subnavigation menu */
-.subnav {
-  float: left;
-  overflow: hidden;
-}
-
-/* Subnav button */
-.subnav .subnavbtn {
-  font-size: 16px; 
-  border: none;
-  outline: none;
-  color: white;
-  padding: 0;
-  background-color: none;
-  font-family: inherit;
-  margin: 0;
-}
-
-/* Add a red background color to navigation links on hover */
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color:none;
-}
-
-/* Style the subnav content - positioned absolute */
-.subnav-content {
-  display: none;
-  position: absolute;
-  left: 0;
-  background-color:white;
-  width: 100%;
-  z-index: 1;
-}
-
-/* Style the subnav links */
-.subnav-content a {
-  float: left;
-  color: rgb(36, 169, 187);
-  text-decoration: none;
-}
-
-/* Add a grey background color on hover */
-.subnav-content a:hover {
-  background-color: white;
-  color:rgb(112, 99, 233);
-}
-
-/* When you move the mouse over the subnav container, open the subnav content */
-.subnav:hover .subnav-content {
-  display:grid;
-
-}
-
-.container{
-    margin: 50px 50px 50px 5%;
-    width: 90%;
-    text-align: center;
-}
-.catgegories{
-    width: max-content;
-    margin: 25px;
-    border: 2px solid #eff1f1;
-    border-radius: 0 0 0 0;
-    display:inline-block;
-}
-.catgegories:hover{
-    box-shadow: 0 0 10px 3px #a2bae7;
-
-}
-.item-image{
-    height: 170px;
-    width: 170px;
-    border-radius: 0 0 50px 50px;
-    padding: 40px;
+@media (max-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-flow: column;
+  }
 }
