@@ -11,9 +11,6 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // const [lang, setLang] = useState("en");
-  // const [nightMode, setNightMode] = useState(false);
-
   const { lang, setLang, nightMode, setNightMode } = useContext(ThemeContext);
 
   useEffect(() => {
